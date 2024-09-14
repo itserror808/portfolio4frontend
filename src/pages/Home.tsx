@@ -117,11 +117,8 @@ export default function Home() {
         >
             <main className="w-full md:2/3 lg:w-1/2 grow flex flex-col items-center py-4 px-4 sm:px-6 lg:px-8">
                 {/* Profile section */}
-                <motion.div
+                <div
                     className="w-full flex items-center justify-between mt-6 md:mt-16 mb-8 flex-col sm:flex-row"
-                    initial={{ y: -50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5 }}
                 >
                     <div className="text-center sm:text-left flex flex-col justify-center max-w-[70%]">
                         <motion.h1
@@ -154,7 +151,7 @@ export default function Home() {
                             alt="M"
                         />
                     </motion.div>
-                </motion.div>
+                </div>
 
                 {/* About Me section */}
                 <motion.section
