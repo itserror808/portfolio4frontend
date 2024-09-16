@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FloatingDockComponent } from '../components/FloatingDockComponent';
 import { motion, AnimatePresence } from 'framer-motion';
-import {ChevronRight, Code, Shield, Globe, Server, Bitcoin, Terminal, LucideIcon} from 'lucide-react';
+import { ChevronRight, Code, Shield, Globe, Server, Bitcoin, Terminal, LucideIcon } from 'lucide-react';
+import {IconCloudDemo} from "../components/iconCloud";
 
 interface SkillCategoryProps {
     icon: LucideIcon;
@@ -10,14 +11,14 @@ interface SkillCategoryProps {
 }
 
 const SkillCategory: React.FC<SkillCategoryProps> = ({ icon: Icon, title, skills }) => (
-    <div className="bg-white dark:bg-neutral-800 rounded-lg p-4 shadow-md">
-        <div className="flex items-center mb-3">
+    <div className="mb-8">
+        <div className="flex items-center mb-2">
             <Icon className="w-6 h-6 mr-2 text-blue-500" />
             <h3 className="text-lg font-semibold">{title}</h3>
         </div>
         <div className="flex flex-wrap gap-2">
             {skills.map((skill, index) => (
-                <span key={index} className="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 rounded-full text-sm">
+                <span key={index} className="px-3 py-1 bg-neutral-200 dark:bg-neutral-700 rounded-full text-sm hover:scale-110 duration-200">
                     {skill}
                 </span>
             ))}
@@ -83,7 +84,7 @@ export default function Home() {
         {
             icon: Globe,
             title: "Web Development",
-            skills: ["React", "Angular", "Spring Boot", "Node.js", "Tailwind CSS", "JakartaEE"]
+            skills: ["React", "Angular", "Spring Boot", "Tailwind CSS", "JakartaEE"]
         },
         {
             icon: Server,
@@ -117,23 +118,21 @@ export default function Home() {
         >
             <main className="w-full md:2/3 lg:w-1/2 grow flex flex-col items-center py-4 px-4 sm:px-6 lg:px-8">
                 {/* Profile section */}
-                <div
-                    className="w-full flex items-center justify-between mt-6 md:mt-16 mb-8 flex-col sm:flex-row"
-                >
+                <div className="w-full flex items-center justify-between mt-6 md:mt-16 mb-8 flex-col sm:flex-row">
                     <div className="text-center sm:text-left flex flex-col justify-center max-w-[70%]">
                         <motion.h1
                             className="text-4xl md:text-5xl font-bold"
-                            initial={{ x: -50, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
+                            initial={{x: -50, opacity: 0}}
+                            animate={{x: 0, opacity: 1}}
+                            transition={{duration: 0.5, delay: 0.2}}
                         >
                             Hi, I'm Meftah<span className="text-cyan-500">.</span>
                         </motion.h1>
                         <motion.h2
                             className="text-md mt-2"
-                            initial={{ x: -50, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
+                            initial={{x: -50, opacity: 0}}
+                            animate={{x: 0, opacity: 1}}
+                            transition={{duration: 0.5, delay: 0.4}}
                         >
                             Versatile full-stack web developer creating seamless, responsive
                             applications from database to user interface.
@@ -141,14 +140,13 @@ export default function Home() {
                     </div>
                     <motion.div
                         className="z-50 h-[8rem] aspect-square relative rounded-full overflow-hidden duration-200"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.6 }}
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{duration: 0.5, delay: 0.6}}
                     >
                         <img
                             className="-translate-y-10"
                             src="/assets/profile.jpeg"
-                            alt="M"
                         />
                     </motion.div>
                 </div>
@@ -156,9 +154,9 @@ export default function Home() {
                 {/* About Me section */}
                 <motion.section
                     className="w-full mb-16"
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.8 }}
+                    initial={{y: 50, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.5, delay: 0.8}}
                 >
                     <h2 className="text-2xl font-bold mb-4">About Me</h2>
                     <p className="text-md">
@@ -172,9 +170,9 @@ export default function Home() {
                 <motion.section
                     id="edu"
                     className="w-full mb-16"
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1 }}
+                    initial={{y: 50, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.5, delay: 1}}
                 >
                     <h2 className="text-2xl font-bold mb-4">Education</h2>
                     {education.map((edu, index) => (
@@ -182,19 +180,32 @@ export default function Home() {
                             key={index}
                             className="mb-4 cursor-pointer"
                             onClick={() => setExpandedEdu(expandedEdu === index ? null : index)}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            initial={{opacity: 0, y: 20}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{duration: 0.5, delay: index * 0.1}}
                         >
                             <div className="flex items-center">
                                 <div
                                     className="w-16 aspect-square mr-4 bg-neutral-200 dark:bg-neutral-800 rounded-full flex items-center justify-center overflow-hidden">
-                                    <img src={edu.logo} alt={edu.institution[0]}
-                                         className="w-full h-full flex items-center justify-center text-2xl font-bold object-cover"/>
-
+                                    {edu.logo ? (
+                                        <img
+                                            src={edu.logo}
+                                            className="w-full h-full object-cover"
+                                            onError={(e) => {
+                                                const target = e.currentTarget;
+                                                target.style.display = 'none';
+                                                const parent = target.parentElement;
+                                                if (parent) {
+                                                    parent.innerHTML = `<h1 class="text-2xl font-bold">${edu.institution[0]}</h1>`;
+                                                }
+                                            }}
+                                        />
+                                    ) : (
+                                        <h1 className="text-2xl font-bold">{edu.institution[0]}</h1>
+                                    )}
                                 </div>
                                 <div className="w-full flex flex-row items-start justify-between text-sm">
-                                <div>
+                                    <div>
                                         <h3 className="font-semibold">{edu.institution}</h3>
                                         <p className="text-sm">{edu.degree}</p>
                                     </div>
@@ -212,9 +223,9 @@ export default function Home() {
                 <motion.section
                     id="experience"
                     className="w-full mb-16"
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.2 }}
+                    initial={{y: 50, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.5, delay: 1.2}}
                 >
                     <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
                     {workExperience.map((job, index) => (
@@ -224,17 +235,30 @@ export default function Home() {
                             onClick={() => setExpandedJob(expandedJob === index ? null : index)}
                             onMouseEnter={() => setHoveredJob(index)}
                             onMouseLeave={() => setHoveredJob(null)}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            initial={{opacity: 0, y: 20}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{duration: 0.5, delay: index * 0.1}}
                         >
                             <div className="flex items-center">
                                 <div
                                     className="w-16 aspect-square mr-4 bg-neutral-200 dark:bg-neutral-800 rounded-full flex items-center justify-center overflow-hidden">
-                                    <img src={job.logo} alt={job.company[0]}
-                                         className="w-full h-full flex items-center justify-center text-2xl font-bold object-cover"/>
+                                    {job.logo ? (
+                                        <img
+                                            src={job.logo}
+                                            className="w-full h-full object-cover"
+                                            onError={(e) => {
+                                                const target = e.currentTarget;
+                                                target.style.display = 'none';
+                                                const parent = target.parentElement;
+                                                if (parent) {
+                                                    parent.innerHTML = `<h1 class="text-2xl font-bold">${job.company[0]}</h1>`;
+                                                }
+                                            }}
+                                        />
+                                    ) : (
+                                        <h1 className="text-2xl font-bold">{job.company[0]}</h1>
+                                    )}
                                 </div>
-
                                 <div className="w-full flex flex-row items-start justify-between text-sm">
                                     <div>
                                         <div className="flex flex-row gap-2 items-center">
@@ -262,10 +286,10 @@ export default function Home() {
                                 {expandedJob === index && (
                                     <motion.p
                                         className="ml-[4.7rem] text-sm mt-2"
-                                        initial={{ opacity: 0, height: 0 }}
-                                        animate={{ opacity: 1, height: 'auto' }}
-                                        exit={{ opacity: 0, height: 0 }}
-                                        transition={{ duration: 0.3 }}
+                                        initial={{opacity: 0, height: 0}}
+                                        animate={{opacity: 1, height: 'auto'}}
+                                        exit={{opacity: 0, height: 0}}
+                                        transition={{duration: 0.3}}
                                     >
                                         {job.description}
                                     </motion.p>
@@ -279,21 +303,27 @@ export default function Home() {
                 <motion.section
                     id="skills"
                     className="w-full mb-16"
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.4 }}
+                    initial={{y: 50, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.5, delay: 0.2}}
                 >
-                    <h2 className="text-2xl font-bold mb-4">Skills</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {skillCategories.map((category, index) => (
-                            <SkillCategory key={index} {...category} />
-                        ))}
+                    <h2 className="text-2xl font-bold mb-6">Skills</h2>
+
+                    <div className="flex flex-col md:flex-row items-center justify-between w-full">
+                        <div className="w-full md:w-auto">
+                            {skillCategories.map((category, index) => (
+                                <SkillCategory key={index} {...category} />
+                            ))}
+                        </div>
+                        <div className="w-full mt-4 md:mt-0">
+                            <IconCloudDemo/>
+                        </div>
                     </div>
                 </motion.section>
             </main>
 
             <div className="fixed z-50 bottom-4">
-                <FloatingDockComponent />
+                <FloatingDockComponent/>
             </div>
         </motion.div>
     );
