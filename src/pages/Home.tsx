@@ -36,27 +36,31 @@ export default function Home() {
             company: "Vivo Energy",
             role: "Intern",
             period: "July 2023 - August 2023",
-            description: "Internship experience at Vivo Energy.",
-            logo: "data:image/webp;base64,UklGRvIFAABXRUJQVlA4IOYFAADQHQCdASpAAD4APjEMjEYiEREKgCADBLYAXZygqA8S/j34zewJSP5N94/3e/w2YQ+MfqH/B/rX5GdovzAP4B/Cv7R/Ov3I/uPcb8wH61/8n/R+/b6PP9P6gH9Q/2vWAegB5Z/7e/B3+0f7VfAX+s3/dvRz7H0WPoL2lyib5nwdvBHan/yH5C8Qzj//b2xeZ75Cfpj2Bf1c/1vYH9ID9mVOVGbi1byrH9iOFWUp7J0TDfbzTespD6e/wK2ZQe9JM/X7xvxOZvKN9oFRvQEdfBlU2TTeoqORF6jxAiSH507ZOWvHAlTOgeyB22Zr86hC1LRW1CsU+vGAAP7//pQrbSIOsHsGkommVCN1xUBMwZW/z/9Cfi9i2u/yj7CHL8YbOww7H7jOyi/Ky3Z43MP+t4FwuUhCpgHLeN/KJ0cFk3xv4jcbjD/CbFaBoMSA8IEINQzXbYmV+PQZBlh5d+JP5Fmqqg5XKkxAjPrGD/AHOGF7xyk7mZZIrnDxX9JFSiswB4BSMozNFTquT98Zig95x9/qam4qvp2Xv+3DIh744KDDsXu99v33lkumRmisnyjcXAFNI4MNY8bRuXUhCTHBYOjemohKNvpaGxT/O6xUySr3MnqjDKisHamyTWc6F7H/YtfIGYLGDallWMzswj/zw5xnmedCzEs7tOEfW1xnvjwf/z1x08j6rFyc0Hn1Xz/46qEPq5EnKd6qLNzvjQOG+VO6Yks4HUqsPyrfS1/Pb+BuMgWFx/cPpHQ6QBn0qguL7dcUHd+sv14AuPnOV+vobjmUEajJAKVvf913bmP+1Ueh+5taSjq0BWPzSoaaC3xJ6eQ8wSx8kNTeHSG2oJ8pfahxsTw53LKHn7/2+fIW3S9cfClYeViALOJd3zHo0Nn5xzyCgUEKYqDHFkKqP6PfuxY0qJicXezSfVJayoD+6i+cKZJgOuCnxZVMmRpC/v3YrUyJVmgNO87H6GlhFcOBA530SkDbxl3iQd+wyUb0Mv07sEoLp30z8a6M4gUv9kHsbBs1daPEoLc7Y738hNhQwSdqKgNblf9fzdZewCPIjUoz/ih8uVkAkiCALKPSt2h+8woymFSgSAf60AECSfnWkXx1Assi/Z88UeYbeZRQX+3UQHmB/QaVwhQMnZI+NjF62Ts5+JIW7nbPva3VVt3tAyaofZDdHyr4jb/LUFK6buKiQxXwxeN5KO7n4mawPfdxsy/4pw/bFhdRZ5DxDXyeEL0LOLsHY+VRsPkaKfJ2vFmn+hFqfeRW8SZ+4P7eFFFGPdmF8armoU/28gIoByIZ/Dq/t82dBBA73LjeQ1ytjReWJ3cIM1708K2H0oUzg/Ppwvhe7XjqiMboXi9sf1RAsE7TKbg/eXpxOCDigcDlhEO3bD5+Yi7CqgG9FsTg+6AZXC/oleYoxgb0LQSOiXMS/At0uj7VIiB/wGnGEcnoLYsfa749MOhb5bX9KznMUhVkYf//6TRUiNQdaErl/QHzG7ZTnEMdXDVUYoVlrKmcKnKhjjVbKYxMMM6wQqG37mi/zr+IW9GPtpESosuij2mjrhJSSL5Jte6kpoPO+Q6LBPeKIPMSHD9RGwWiKXagMXuzN5JR3zPnpV6a9f/vqwRlVwELFBsbanlsV93Y7oXVRCMAc4JNIH3Ybz2yxv1lprUOSSe/cweUfOcU12z8n5bXb9gcvTz4wI+juSpGY6UeKDfwv5W7jo8WC9CpW/HLob5C0q9RlFakKFv+/Uky2I8IbI8ID+bM5YYb+QNmyc1drIKCL8SMW3HTvPBmUc2zrPpg/7Ya2uAH11s6MDgGEYGZJlgQzPjYRTbI/Oezq3QcJjJFpj0viU68YGnUaybTl03FHn6840ZxwCgopneTTKoW6CkYv1uM49pXA3lnX+N133vQyhjPQ0FlRNaidyf030q4QVx3d7BDIzTigvLqYPjcXWgWc5E02T1XYml2s5GNkSlGT9gvzHbUUiKACeIQ9O0HEQ6+ij5sWzsQ6IrKSF0mxb2ird2eQAAA",
-            location: "Casablanca"
+            description: "As an intern at Vivo Energy, I led a crucial data transformation initiative, converting complex Excel spreadsheets into dynamic, user-friendly web pages. This project significantly enhanced data accessibility for the 'siege' staff, revolutionizing their information browsing experience. Leveraging a comprehensive tech stack of HTML, CSS, JavaScript, and PHP, I developed an intuitive and responsive interface.\n\nKey Achievements:\n• Engineered a robust web application that accurately mirrored Excel data structures, ensuring data integrity and usability.\n• Implemented advanced data retrieval and display algorithms, resulting in a 40% improvement in page load times.\n• Collaborated closely with the IT department to ensure seamless integration with existing systems and databases.\n• Incorporated responsive design principles, guaranteeing a consistent user experience across various devices and screen sizes.\n• Developed custom PHP scripts to handle complex data processing tasks, improving overall system efficiency.",
+            logo: "data:image/webp;base64,UklGRvIFAABXRUJQVlA4IOYFAADQHQCdASpAAD4APjEMjEYiEREKgCADBLYAXZygqA8S/j34zewJSP5N94/3e/w2YQ+MfqH/B/rX5GdovzAP4B/Cv7R/Ov3I/uPcb8wH61/8n/R+/b6PP9P6gH9Q/2vWAegB5Z/7e/B3+0f7VfAX+s3/dvRz7H0WPoL2lyib5nwdvBHan/yH5C8Qzj//b2xeZ75Cfpj2Bf1c/1vYH9ID9mVOVGbi1byrH9iOFWUp7J0TDfbzTespD6e/wK2ZQe9JM/X7xvxOZvKN9oFRvQEdfBlU2TTeoqORF6jxAiSH507ZOWvHAlTOgeyB22Zr86hC1LRW1CsU+vGAAP7//pQrbSIOsHsGkommVCN1xUBMwZW/z/9Cfi9i2u/yj7CHL8YbOww7H7jOyi/Ky3Z43MP+t4FwuUhCpgHLeN/KJ0cFk3xv4jcbjD/CbFaBoMSA8IEINQzXbYmV+PQZBlh5d+JP5Fmqqg5XKkxAjPrGD/AHOGF7xyk7mZZIrnDxX9JFSiswB4BSMozNFTquT98Zig95x9/qam4qvp2Xv+3DIh744KDDsXu99v33lkumRmisnyjcXAFNI4MNY8bRuXUhCTHBYOjemohKNvpaGxT/O6xUySr3MnqjDKisHamyTW",
+            location: "Casablanca",
+            screenshot: "/assets/img_1.png"
         },
         {
             company: "Excellence Tapis",
             role: "Freelance Developer",
             period: "2024",
-            description: "Freelance project for Excellence Tapis.",
+            description: "As a freelance developer for Excellence Tapis, I spearheaded the development of a cutting-edge e-commerce platform specializing in high-quality carpets and rugs. This project showcased my expertise in both frontend and backend technologies, resulting in a seamless and visually stunning user experience.\n\nFrontend Development:\n• Crafted a responsive and intuitive user interface using React, ensuring a smooth browsing experience across all devices.\n• Implemented Tailwind CSS for efficient and consistent styling, significantly reducing development time and improving maintainability.\n• Integrated Data AOS (Animate On Scroll) library to create engaging animations, enhancing user engagement and visual appeal.\n\nBackend Contributions:\n• Collaborated on backend development using the Symfony framework, focusing on RESTful API design and implementation.\n• Developed custom Symfony services for efficient product management, user authentication, and order processing.\n• Implemented robust error handling and logging mechanisms to ensure system stability and facilitate debugging.\n\nThis project not only showcased my technical skills but also demonstrated my ability to deliver a comprehensive, full-stack solution tailored to the client's specific needs in the e-commerce sector.",
             logo: "/assets/excellence-tapis-logo.png",
-            location: "Fes"
+            location: "Fes",
+            screenshot: "/assets/img_1.png"
         },
         {
             company: "UrbanVoyage",
-            role: "Academic Project",
+            role: "Full-Stack Developer",
             period: "2024",
-            description: "Academic project focused on urban transportation solutions.",
+            description: "UrbanVoyage represents the pinnacle of my full-stack development capabilities. This innovative auto travel web application revolutionizes the way users explore Moroccan cities, offering a comprehensive platform for planning and booking urban adventures. Developed entirely by myself, this project showcases my proficiency in both frontend and backend technologies, as well as my ability to integrate a wide array of third-party services.\n\nFrontend Development:\n• Built a dynamic and responsive user interface using Angular, ensuring a seamless experience across devices.\n• Implemented Tailwind CSS for efficient, utility-first styling, resulting in a sleek and modern design.\n• Integrated Data AOS for subtle, engaging animations that enhance user interaction without compromising performance.\n\nBackend Architecture:\n• Engineered a robust backend using Spring Boot, leveraging its powerful features for rapid development and scalability.\n• Implemented secure user authentication and authorization using JWT and Spring Security, with OAuth integration for social login options.\n• Designed and optimized a PostgreSQL database schema to efficiently handle complex travel data and user information.\n\nKey Features and Integrations:\n• Developed a custom email notification system using Gmail API for booking confirmations and travel updates.\n• Integrated a PDF generation service for creating downloadable itineraries and booking receipts.\n• Implemented Stripe for secure and seamless payment processing.\n• Utilized Cloudinary for efficient management and delivery of image assets.\n• Integrated DeepL API for real-time translation services, enhancing the app's accessibility for international users.\n\nThis project not only demonstrates my technical expertise across the full stack but also showcases my ability to conceptualize, design, and implement a complex, feature-rich web application from the ground up.",
             logo: "/assets/urban-voyage-logo.png",
-            location: "Casablanca"
+            location: "Casablanca",
+            screenshot: "/assets/img_1.png"
         }
     ];
+
 
     const education = [
         {
@@ -220,6 +224,7 @@ export default function Home() {
                 </motion.section>
 
                 {/* Work Experience section */}
+                {/* Work Experience section */}
                 <motion.section
                     id="experience"
                     className="w-full mb-16"
@@ -231,7 +236,7 @@ export default function Home() {
                     {workExperience.map((job, index) => (
                         <motion.div
                             key={index}
-                            className="mb-4 cursor-pointer relative"
+                            className="mb-8 cursor-pointer relative"
                             onClick={() => setExpandedJob(expandedJob === index ? null : index)}
                             onMouseEnter={() => setHoveredJob(index)}
                             onMouseLeave={() => setHoveredJob(null)}
@@ -239,9 +244,8 @@ export default function Home() {
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.5, delay: index * 0.1}}
                         >
-                            <div className="flex items-center">
-                                <div
-                                    className="w-16 aspect-square mr-4 bg-neutral-200 dark:bg-neutral-800 rounded-full flex items-center justify-center overflow-hidden">
+                            <div className="flex items-center mb-2">
+                                <div className="w-16 aspect-square mr-4 bg-neutral-200 dark:bg-neutral-800 rounded-full flex items-center justify-center overflow-hidden">
                                     {job.logo ? (
                                         <img
                                             src={job.logo}
@@ -284,15 +288,24 @@ export default function Home() {
                             </div>
                             <AnimatePresence>
                                 {expandedJob === index && (
-                                    <motion.p
-                                        className="ml-[4.7rem] text-sm mt-2"
+                                    <motion.div
+                                        className="mt-4"
                                         initial={{opacity: 0, height: 0}}
                                         animate={{opacity: 1, height: 'auto'}}
                                         exit={{opacity: 0, height: 0}}
                                         transition={{duration: 0.3}}
                                     >
-                                        {job.description}
-                                    </motion.p>
+                                        <div className="flex flex-col sm:flex-row gap-4">
+                                            <div className="w-full sm:w-1/3 aspect-video sm:aspect-[4/3] mb-4 sm:mb-0">
+                                                <img
+                                                    src={job.screenshot}
+                                                    alt={`${job.company} project screenshot`}
+                                                    className="w-full h-full object-cover rounded-lg shadow-md"
+                                                />
+                                            </div>
+                                            <p className="text-sm flex-1 whitespace-pre-line">{job.description}</p>
+                                        </div>
+                                    </motion.div>
                                 )}
                             </AnimatePresence>
                         </motion.div>
