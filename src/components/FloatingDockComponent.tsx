@@ -63,7 +63,7 @@ export function FloatingDockComponent() {
     return (
         <div className="flex items-center justify-center w-full">
             <FloatingDock
-                mobileClassName="translate-y-20" // only for demo, remove for production
+                mobileClassName="fixed right-4 bottom-4" // only for demo, remove for production
                 items={links}
             />
         </div>

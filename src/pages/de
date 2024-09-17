@@ -182,3 +182,61 @@ export default function WorkExperience() {
     </section>
   );
 }
+
+
+
+import React from 'react';
+import { FloatingDockComponent } from '../components/FloatingDockComponent';
+import { motion } from 'framer-motion';
+import {
+    ChevronRight,
+    Code,
+    Shield,
+    Globe,
+    Server,
+    Bitcoin,
+    Terminal,
+    LucideIcon,
+    Calendar,
+    MapPin,
+} from 'lucide-react';
+import {IconCloudDemo} from "../components/iconCloud";
+import ProjectGrid from "../components/project-grid";
+
+// ... (keep the rest of the imports and interfaces as they were)
+
+export default function Home() {
+    const [expandedJob, setExpandedJob] = useState<number | null>(null);
+    const [expandedEdu, setExpandedEdu] = useState<number | null>(null);
+    const [hoveredJob, setHoveredJob] = useState<number | null>(null);
+
+    // ... (keep the rest of the state and data as they were)
+
+    return (
+        <motion.div
+            id="home"
+            className="w-full bg-neutral-100 dark:bg-neutral-950 text-neutral-950 dark:text-neutral-100 min-h-screen flex flex-col items-center"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 0.5}}
+        >
+            {/* ... (keep the rest of the sections as they were) */}
+
+            {/* Projects section */}
+            <motion.section
+                id="projects"
+                className="w-full mb-16"
+                initial={{y: 50, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 1.4}}
+            >
+                <h2 className="text-2xl font-bold mb-6">My Projects</h2>
+                <ProjectGrid projects={projects}/>
+            </motion.section>
+
+            <div className="fixed z-50 bottom-4">
+                <FloatingDockComponent/>
+            </div>
+        </motion.div>
+    );
+}
